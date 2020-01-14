@@ -1,0 +1,1739 @@
+/* Color palette */
+:root {
+  --movistar-blue: #00a9e0;
+  --movistar-blueDark: #0098d2;
+  --movistar-blueLight-70: #4cc2e9;
+  --movistar-blueLight-50: #7fd4ef;
+  --movistar-blueLight-20: #b2e5f5;
+  --movistar-green: #5bc500;
+  --movistar-greenDark: #499e00;
+  --movistar-greenLight-40: #ade27f;
+  --movistar-greenLight-20: #cdedb2;
+  --pepper: #ff374a;
+  --pepper-dark: #d73241;
+  --pepper-light: #ff6173;
+  --purple: #954b97;
+  --pink: #e9426d;
+  --orange: #ec6839;
+  --egg: #f59c00;
+  --egg-light: #fce1b2;
+  --movistar-cool-grey: #2a2a3c;
+  --black: #000000;
+  --movistar-gunmetal: #63666d;
+  --cool-gray-10:#50535a;
+  --grey-0: #3a3a3a;
+  --grey-1: #666666;
+  --grey-2: #757575;
+  --grey-3: #dddddd;
+  --grey-4: #eeeeee;
+  --grey-5: #f6f6f6;
+  --grey-6: #999999;
+  --grey-shadow:#b6b7b7;
+  --white: #ffffff;
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'Telefonica';
+  src: url('../fonts/Telefonica-Bold.eot') format('embedded-opentype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Telefonica';
+  src: url('../fonts/Telefonica-Bold.otf') format('opentype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Telefonica';
+  src: url('../fonts/Telefonica-Bold.svg') format('svg');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Telefonica';
+  src: url('../fonts/Telefonica-Bold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Telefonica';
+  src: url('../fonts/Telefonica-Bold.woff') format('woff');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Telefonica';
+  src: url('../fonts/Telefonica-ExtraLight.eot') format('embedded-opentype');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Telefonica';
+  src: url('../fonts/Telefonica-ExtraLight.svg') format('svg');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Telefonica';
+  src: url('../fonts/Telefonica-ExtraLight.woff') format('woff');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Telefonica';
+  src: url('../fonts/Telefonica-Light.eot') format('embedded-opentype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Telefonica';
+  src: url('../fonts/Telefonica-Light.svg') format('svg');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Telefonica';
+  src: url('../fonts/Telefonica-Light.woff') format('woff');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Telefonica';
+  src: url('../fonts/Telefonica-Regular.eot') format('embedded-opentype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Telefonica';
+  src: url('../fonts/Telefonica-Regular.svg') format('svg');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Telefonica';
+  src: url('../fonts/Telefonica-Regular.woff') format('woff');
+  font-weight: 400;
+}
+
+
+@font-face {
+  font-family: 'movistar';
+  src: url('../fonts-icons/movistar-icons/movistar.eot') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: 'movistar';
+  src: url('../fonts-icons/movistar-icons/movistar.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'movistar';
+  src: url('../fonts-icons/movistar-icons/movistar.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'movistar';
+  src: url('../fonts-icons/movistar-icons/movistar.woff') format('woff');
+}
+
+/********* Fonts *********/
+
+html{
+  overflow: inherit;
+}
+
+body {
+  font-family: "Telefonica",sans-serif;
+  font-style: normal;
+  margin: 0;
+  font-size: inherit;
+  overflow: inherit;
+  background-color: #F6F6F6;
+  font-weight: 400;
+}
+
+div{
+  font-family: "Telefonica",sans-serif;
+  font-style: normal;
+  margin: 0;
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.movistar .bg-table {
+  min-height: calc(100vh - 85px);
+}
+
+.movistar .container-valign {
+  position: absolute;
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 100%;
+}
+
+.movistar .bg-push-l{
+  padding-left: 290px;
+  position: relative;
+  top: 16px;
+}
+
+.movistar header {
+  position: relative;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px #ddd solid;
+  z-index:10
+}
+
+.movistar .logout {
+  width: 20px;
+  margin-left: 25px;
+}
+
+.movistar .logo-movistar {
+  height: 25px;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.movistar .title-ds{
+  font-size: 100%;
+}
+
+.movistar h1 {
+  color: #50535a;
+  color: var(--movistar-gunmetal);
+  font-weight: 300;
+}
+
+.movistar h2 {
+  font-size: 1.63em;
+  margin: 0.7em 0;
+  color: #50535a;
+  color: var(--movistar-gunmetal);
+  font-weight: 100;
+}
+
+.movistar h3 {
+  font-size: 1.2em;
+  margin: 0.7em 0;
+  color: #50535a;
+  color: var(--movistar-gunmetal);
+}
+
+.movistar h4 {
+  font-size: 1em;
+  font-weight: 300;
+  margin: 0.7em 0;
+  color: #50535a;
+  color: var(--movistar-gunmetal);
+}
+
+.movistar h5 {
+  font-size: 1.5em;
+  color: #50535a;
+  color: var(--movistar-gunmetal);
+}
+
+.movistar p {
+  color: #50535a;
+  line-height: 1.3em;
+  color: var(--movistar-gunmetal);
+}
+
+.movistar a {
+  color: #50535a;
+  color: var(--movistar-gunmetal);
+  text-decoration: underline;
+}
+
+.movistar a:hover {
+  color: #50535a;
+  color: var(--movistar-gunmetal);
+  text-decoration: underline;
+}
+
+.movistar a.go-back {
+  color: #00a9e0;
+  text-decoration: none;
+}
+
+.movistar a.deleteUnderline{
+  text-decoration: none;
+}
+
+.movistar a.go-back .icon-ic_chevron_left_48px{
+  transform: translateY(10%);
+}
+
+/* .movistar span {
+  font-family: "Telefonica" !important;
+  line-height: 1.35em;
+  color: #50535a;
+  color: var(--movistar-gunmetal);
+} */
+
+.movistar ul li {
+  color: #50535a;
+  color: var(--movistar-gunmetal);
+}
+
+.movistar table {
+  color: #50535a;
+    color: var(--movistar-gunmetal);
+}
+
+.movistar .table th, .movistar .table td {
+  vertical-align: middle;
+}
+
+.movistar .vertical-center {
+  display: flex; display: -webkit-flex;
+  align-items: center;
+}
+
+.movistar .italic {
+  font-style: italic;
+}
+
+.movistar .bold {
+  font-family: 'Telefonica';
+  font-weight: 600;
+}
+
+.movistar .icon{
+  cursor: inherit;
+  line-height: unset!important;
+  margin-right: 8px;
+  display: inline-flex;
+}
+
+.movistar .text-center-icon {
+  display: flex;
+  align-items: center;
+}
+
+.movistar .icon-middle{
+  vertical-align: middle;
+  cursor: inherit;
+  line-height: normal!important;
+}
+
+.movistar .uppercase {
+  text-transform: uppercase;
+}
+
+.movistar .modal{
+  background-color: rgba(0, 0, 0, 0.295);
+}
+
+.movistar .modal .modal-dialog{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.movistar .modal-content{
+  border: none;
+}
+
+.movistar .modal-footer{
+  border-top: none;
+}
+
+.movistar .modal-body img{
+  max-width: 100%;
+}
+
+.movistar .modal-footer .one-btn{
+  width: 80%;
+}
+
+.movistar .accordion{
+  border: none;
+}
+
+/* BACKGROUND AND TEXT COLOR */
+
+.movistar .text-blue {
+  color: #00a9e0;
+}
+.movistar .text-blueDark {
+  color: #0098d2;
+}
+.movistar .text-blueLight-70 {
+  color: #4cc2e9;
+}
+.movistar .text-blueLight-50 {
+  color: #7fd4ef;
+}
+.movistar .text-blueLight-20 {
+  color: #b2e5f5;
+}
+.movistar .text-green {
+  color: #5bc500;
+}
+.movistar .text-greenDark {
+  color: #499e00;
+}
+.movistar .text-greenLight-40 {
+  color: #ade27f;
+}
+.movistar .text-greenLight-20 {
+  color: #cdedb2;
+}
+.movistar .text-pepper {
+  color: #ff374a;
+}
+.movistar .text-pepperDark {
+  color: #d73241;
+}
+.movistar .text-pepperLight {
+  color: #ff6173;
+}
+.movistar .text-purple {
+  color: #954b97;
+}
+.movistar .text-pink {
+  color: #e9426d;
+}
+.movistar .text-orange {
+  color: #ec6839;
+}
+.movistar .text-egg {
+  color: #f59c00;
+}
+.movistar .text-eggLight {
+  color: #fce1b2;
+}
+.movistar .text-black {
+  color: #000000;
+}
+.movistar .text-cool-grey {
+  color: #2a2a3c;
+}
+.movistar .text-gunmetal {
+  color: #50535a;
+  color: var(--movistar-gunmetal);
+}
+.movistar .text-grey-0 {
+  color: #3a3a3a;
+}
+.movistar .text-grey-a{
+  color: #86888c;
+}
+.movistar .text-grey-a:hover{
+  color: #0299d8;
+}
+.movistar .text-grey-1 {
+  color: #666666;
+}
+.movistar .text-grey-2 {
+  color: #757575;
+}
+.movistar .text-grey-3 {
+  color: #dddddd;
+}
+.movistar .text-grey-4 {
+  color: #eeeeee;
+}
+.movistar .text-grey-5 {
+  color: #f6f6f6;
+}
+.movistar .text-grey-6 {
+  color: #999999;
+}
+.movistar .text-white {
+  color: #ffffff;
+}
+.movistar .text-grey-shadow {
+  color: #b6b7b7;
+}
+
+/* Color BG */
+.movistar .bg-blue {
+  background-color: #00a9e0;
+}
+.movistar .bg-blueDark {
+  background-color: #0098d2;
+}
+.movistar .bg-blueLight-70 {
+  background-color: #4cc2e9;
+}
+.movistar .bg-blueLight-50 {
+  background-color: #7fd4ef;
+}
+.movistar .bg-blueLight-20 {
+  background-color: #b2e5f5;
+}
+.movistar .bg-green {
+  background-color: #5bc500;
+}
+.movistar .bg-greenDark {
+  background-color: #499e00;
+}
+.movistar .bg-greenLight-40 {
+  background-color: #ade27f;
+}
+.movistar .bg-greenLight-20 {
+  background-color: #cdedb2;
+}
+.movistar .bg-greenLight-10 {
+  background-color: #eef9e5;
+}
+.movistar .bg-pepper {
+  background-color: #ff374a;
+}
+.movistar .bg-pepperDark {
+  background-color: #d73241;
+}
+.movistar .bg-pepperLight {
+  background-color: #ff6173;
+}
+.movistar .bg-purple {
+  background-color: #954b97;
+}
+.movistar .bg-pink {
+  background-color: #e9426d;
+}
+.movistar .bg-orange {
+  background-color: #ec6839;
+}
+.movistar .bg-egg {
+  background-color: #f59c00;
+}
+.movistar .bg-eggLight {
+  background-color: #fce1b2;
+}
+.movistar .bg-black {
+  background-color: #000000;
+}
+.movistar .bg-cool-grey {
+  background-color: #2a2a3c;
+}
+.movistar .bg-gunmetal {
+  background-color: #50535a;
+    color: var(--movistar-gunmetal);
+}
+.movistar .bg-grey-0 {
+  background-color: #3a3a3a;
+}
+.movistar .bg-grey-1 {
+  background-color: #666666;
+}
+.movistar .bg-grey-2 {
+  background-color: #757575;
+}
+.movistar .bg-grey-3 {
+  background-color: #dddddd;
+}
+.movistar .bg-grey-4 {
+  background-color: #eeeeee;
+}
+.movistar .bg-grey-5 {
+  background-color: #f6f6f6;
+}
+.movistar .bg-grey-shadow {
+  background-color: #b6b7b7;
+}
+.movistar .bg-white {
+  background-color: #ffffff;
+}
+
+.movistar .bg-form {
+  background-color: #e9eae8;
+}
+/* FIN BACKGROUND AND TEXT COLOR */
+
+/* DIVIDER */
+.divide-objects {
+  border: 1px solid #ddd;
+}
+.divide-states {
+  border-style: dotted;
+}
+/* DIVIDER */
+
+/* BUTTONS */
+
+.movistar .btn {
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: none;
+  font-style: normal;
+  font-size: 1.125em;
+  border: none;
+  letter-spacing: 0.03em;
+  width: 100%;
+  cursor: pointer;
+  min-height: 56px;
+  display: flex!important;
+  align-items: center;
+  justify-content: center;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  overflow: hidden;
+}
+
+.movistar .btn:focus {
+  box-shadow: none;
+}
+
+.movistar .btn:focus:active {
+  box-shadow: none !important;
+}
+
+/* Primary Button */
+.movistar .btn-primary {
+  background-color: #5bc500!important;
+  color: #ffffff!important;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.movistar .btn-primary:hover {
+  color: #ffffff !important;
+}
+.movistar .btn-primary:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #499E00;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.movistar .btn-primary:hover:before, .movistar .btn-primary:focus:before, .movistar .btn-primary:active:before {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+.movistar .btn-primary:focus {
+  border: 2px #499E00 solid;
+}
+.movistar .btn-primary.disabled {
+  background-color: #5bc500!important;
+  color: #ffffff;
+  filter: opacity(50%);
+  cursor: not-allowed;
+}
+/* Primary Button */
+
+/* Secondary Button */
+
+.movistar .btn-secondary {
+  border:1px #5BC500 solid;
+  background-color: #fff!important;
+  color: #5BC500;
+  color: var(--movistar-green);
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.movistar .btn-secondary:hover,
+.movistar .btn-secondary:active {
+  background-color: #fff !important;
+  color: #499E00 !important;
+  border: 1px #499E00 solid
+}
+.movistar .btn-secondary:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:rgba(91,197,0,0.2);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.movistar .btn-secondary:hover:before, .movistar .btn-secondary:focus:before, .movistar .btn-secondary:active:before {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+.movistar .btn-secondary.disabled {
+  background-color: #fff;
+  color: #5BC500 !important;
+  color: var(--movistar-green);
+  border: 1px #5BC500 solid !important;
+  filter: opacity(50%);
+  cursor: not-allowed;
+}
+/* Secondary Button */
+
+/* Terciary button */
+.movistar .btn-terciary {
+  border:1px #00a9e0 solid;
+  border:1px var(--movistar-blue) solid;
+  background-color: #fff;
+  color: #00a9e0;
+  color: var(--movistar-blue);
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.movistar .btn-terciary:hover,
+.movistar .btn-terciary:active {
+  background-color: #fff !important;
+  color: #0098d2 !important;
+  color: var(--movistar-blueDark);
+  border: 1px #0098d2 solid;
+  border: 1px var(--movistar-blueDark) solid;
+}
+.movistar .btn-terciary:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:rgba(0,169,224,0.2);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.movistar .btn-terciary:hover:before, .movistar .btn-terciary:focus:before, .movistar .btn-terciary:active:before {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+.movistar .btn-terciary.disabled {
+  border:1px #00a9e0 solid;
+  border:1px var(--movistar-blue) solid;
+  background-color: #fff;
+  color: #00a9e0;
+  color: var(--movistar-blue);
+  filter: opacity(50%);
+  cursor: not-allowed;
+}
+/* Terciary button */
+
+/* Ghost button */
+.movistar .btn-ghost {
+  border:1px var(--grey-3) solid;
+  border:1px #eeeeee solid;
+  background-color: #fff;
+  background-color: var(--white);
+  color: #50535a;
+  color: var(--cool-gray-10);
+}
+.movistar .btn-ghost:hover,
+.movistar .btn-ghost:active {
+  border:1px var(--grey-shadow) solid;
+  border:1px #b6b7b7 solid;
+  background-color: #fff;
+  background-color: var(--white);
+  color: #50535a;
+  color: var(--cool-gray-10);
+}
+.movistar .btn-ghost.disabled {
+  border:1px var(--grey-3) solid;
+  border:1px #eeeeee solid;
+  background-color: #fff;
+  background-color: var(--white);
+  color: #50535a;
+  color: var(--cool-gray-10);
+  filter: opacity(50%);
+  cursor: not-allowed;
+}
+/* Ghost button */
+
+/* Icon + Next +  button */
+.movistar .btn-next {
+  border:2px #00a9e0 solid;
+  border:2px var(--movistar-blue) solid;
+  background-color: #fff;
+  color: #50535a;
+  color: var(--cool-gray-10);
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.movistar .btn-next:hover,
+.movistar .btn-next:active {
+  background-color: #00a9e0 !important;
+  color: #ffffff !important;
+  color: var(--white)!important;
+  border: 1px #00a9e0 solid;
+  border: 1px var(--movistar-blue) solid;
+}
+.movistar .btn-next:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:rgba(0,169,224,0.2);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.movistar .btn-next:hover:before, .movistar .btn-next:focus:before, .movistar .btn-next:active:before {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+.movistar .btn-next.disabled {
+  border:1px #00a9e0 solid;
+  border:1px var(--movistar-blue) solid;
+  background-color: #fff;
+  color: #00a9e0;
+  color: var(--movistar-blue);
+  filter: opacity(50%);
+  cursor: not-allowed;
+}
+
+.movistar .btn-next1{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.one {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+.two { 
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+}
+.three {
+  grid-column: 1;
+  grid-row: 2 / 5;
+}
+/* Icon + Next +  button */
+
+/* Return button */
+.movistar .btn-return-icon {
+  background-color: transparent;
+  color: #00a9e0;
+  color: var(--movistar-blue);
+}
+.movistar .btn-return-icon:hover {
+  color: #0098d2!important;
+  color: var(--movistar-blueDark);
+}
+.movistar .btn-return-icon.disabled {
+  color: #0098d2!important;
+  color: var(--movistar-blueDark);
+  filter: opacity(50%);
+  cursor: not-allowed;
+}
+/* Return button */
+
+/* Attach Button */
+
+/* .movistar .btn-attach {
+  width: 40px;
+  min-height: 40px!important;
+  height: 30px;
+  background-color: #00a9e0!important;
+  background-color: var(--movistar-blue)!important;
+  color: #ffffff;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  position: absolute;
+  bottom:0;
+  right: 0;
+  font-size: 24px;
+  padding-left: 8px;
+}
+
+.movistar .btn-attach:hover {
+  color: #ffffff !important;
+}
+
+.movistar .btn-attach:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0098d2;
+  background-color: var(--movistar-blueDark);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.movistar .btn-attach:hover:before, .movistar .btn-attach:focus:before, .movistar .btn-attach:active:before {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+.movistar .btn-attach:focus {
+  background-color: #0098d2;
+  background-color: var (--movistar-blueDark);
+}
+.movistar .btn-attach.disabled {
+  background-color: #00a9e0!important;
+  background-color: var(--movistar-blue)!important;
+  color: #ffffff;
+  filter: opacity(50%);
+  cursor: not-allowed;
+} */
+
+.custom-file-input, .custom-file-label, .custom-file-label i{
+  cursor: pointer;
+}
+
+.custom-file-label::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  display: block;
+  line-height: 1.5;
+  color: #fff!important;
+  content: "Adjuntar"!important;
+  background-color: #00a9e0!important;
+  background-color: var(--movistar-blue)!important;
+  border-left: inherit;
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+
+/* Attach Button */
+
+/* Skeleton View Button */
+
+.movistar .skeleton-view {
+  background-color: #eee;
+}
+.movistar .skeleton-view-min {
+  background-color: #eee;
+  width: 100%;
+  vertical-align: middle;
+  min-height: 20px;
+  border: none;
+  border-radius: 4px;
+  margin: 0.5em;
+}
+
+/* Skeleton View Button */
+
+/* Code panel */
+
+.movistar .btn-copy {
+  color: #fff;
+  color: var(--white);
+  position: absolute;
+  z-index: 10000;
+  border:none;
+  background: transparent!important;
+  top: 15px;
+  right: 8px;
+  font-size: 20px;
+}
+/* Code panel */
+
+
+.movistar .btn-add {
+  border: 1px solid #63666d;
+  color: #50535a;
+    color: var(--movistar-gunmetal);
+  background-color: #ffffff;
+}
+
+.movistar .btn-danger {
+  background-color: #ff374a;
+  color: #ffffff;
+}
+.movistar .btn-danger:hover,
+.movistar .btn-danger:active {
+  background-color: #d73241 !important;
+  color: #ffffff !important;
+}
+
+.movistar .btn-danger.disabled {
+  background-color: #ff6173;
+  color: #ffffff;
+  filter: opacity(50%);
+  cursor: not-allowed;
+}
+
+.movistar .btn-danger-inv {
+  border: 1px solid #ff374a;
+  background-color: #ffffff;
+  color: #ff374a;
+}
+.movistar .btn-danger-inv:hover,
+.movistar .btn-danger-inv:active {
+  background-color: #f5dfe0 !important;
+  color: #ff374a !important;
+}
+
+.movistar .btn-danger-inv.disabled {
+  border: 1px solid #ff374a;
+  background-color: #ffffff;
+  color: #ff374a;
+  filter: opacity(50%);
+}
+.movistar .btn-disabled {
+  background-color: #dddddd;
+  color: #c5c5c5;
+}
+.movistar .btn-disabled:hover,
+.movistar .btn-disabled:active {
+  background-color: #f5dfe0 !important;
+  color: #c5c5c5 !important;
+}
+
+.movistar .btn-disabled-inv {
+  border: 1px solid #dddddd;
+  background-color: #ffffff;
+  color: #dddddd;
+}
+.movistar .btn-disabled-inv:hover,
+.movistar .btn-disabled-inv:active {
+  background-color: #f3f3f3 !important;
+  color: #dddddd !important;
+}
+
+.movistar .nav-pills .nav-link.active, .movistar .nav-pills .show > .nav-link {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+}
+.movistar .btn.full {
+  width: 100%;
+  margin: 0.4em 0;
+}
+
+.movistar .nav-tabs {
+  border-bottom: none!important;
+}
+
+.movistar .tab-content > .active {
+  border-top: 1px #ddd solid;
+  border-left: 1px #ddd solid;
+  border-right: 1px #ddd solid;
+  padding: 15px;
+}
+.movistar .tab-object {
+  border-bottom: 1px #ddd solid;
+  border-left: 1px #ddd solid;
+  border-right: 1px #ddd solid;
+}
+.movistar .nav-tabs .nav-link {
+  text-decoration: none;
+}
+
+.movistar .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+  text-decoration: none;
+}
+
+.movistar .btn.normal {
+  white-space: normal;
+}
+@media (max-width: 767px){
+  .movistar .btn.full-mobile {
+    width: 100%;
+    margin: 0.4em 0;
+  }
+  .movistar h1{
+    font-size: 2rem;
+  }
+}
+
+/* FIN BUTTONS */
+
+/* INPUTS */
+
+.movistar .form-group {
+  margin-bottom: 0.6em;
+  position: relative;
+}
+
+.movistar table .form-group {
+  margin-bottom: 0;
+  position: relative;
+}
+
+.movistar label {
+  margin-bottom: 0.1rem;
+  color: #50535A;
+  color: var(--cool-gray-10);
+  font-size: 1em;
+}
+
+.movistar .helper-text {
+  font-size: 0.8em;
+  color: var(--grey-6);
+  color: #999999;
+  margin-bottom: 8px;
+}
+
+.movistar .icon-alerts-input {
+  font-size: 1.3em;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.movistar .custom-control-label {
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+
+.movistar label.label-title {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 600;
+  line-height: 1.3em;
+}
+
+/* Dropdown Browsers FIX*/
+
+.movistar select.form-control::-ms-expand {
+    display: none;
+}
+
+.movistar .hiddenElement{
+  display: none;
+}
+
+.movistar select.form-control {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAxNiAxNyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTYgMTc7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZW5hYmxlLWJhY2tncm91bmQ6bmV3ICAgIDt9Cgkuc3Qxe2ZpbGw6Izk5OTk5OTt9Cjwvc3R5bGU+CjxnIGNsYXNzPSJzdDAiPgoJPHBhdGggY2xhc3M9InN0MSIgZD0iTTQuOSw1LjdMOCw4LjhsMy4xLTMuMUwxMiw2LjdsLTQsNGwtNC00TDQuOSw1Ljd6Ii8+CjwvZz4KPC9zdmc+Cg==');
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: 97% center;
+}
+
+.movistar .icon-drop-select {
+  font-size: 24px;
+  position: absolute;
+  right: 8px;
+  top: 6px;
+  color:#999999;
+}
+
+.movistar .dropdown-toggle::after {
+  content: none!important;
+}
+.movistar .dropdown-menu.show {
+  width: 100%;
+}
+/* Dropdown bowsers FIX - END */
+
+.movistar .form-control {
+  display: block;
+  width: 100%;
+  height: 40px;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-clip: padding-box;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  background-color: #fff;
+  background-color: var(--white);
+  border: 1px #999999 solid;
+  margin-bottom: 8px;
+}
+
+.movistar .form-control.inactive {
+  background-color: #fff;
+  background-color: var(--white);
+}
+
+/* .movistar select.form-control:not([size]):not([multiple]) {
+  height: 3.2em;
+} */
+
+.movistar .form-control.with-icon{
+  padding-left: 2.5em;
+}
+
+.movistar .form-group span.icon{
+  position: absolute;
+  left: .9em;
+  top: 2em;
+  height: 1.6em;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  font-size: 1em;
+}
+
+.movistar .form-group span.icon.no-label{
+  top: .9em;
+}
+
+.movistar .form-group span.icon i{
+  color: #50535a;
+  color: var(--movistar-gunmetal);
+  cursor: text !important;
+}
+
+input::-webkit-input-placeholder {
+  color: #999999 !important;
+  }
+
+input::-moz-placeholder {
+  color: #999999 !important;
+  }
+
+input:-moz-placeholder { /* Older versions of Firefox */
+  color: #999999 !important;
+  }
+
+input:-ms-input-placeholder {
+  color: #999999!important;
+}
+
+.movistar .form-control:focus {
+  color: var(--cool-gray-10);
+  color: #50535a;
+  border-color: #00a9e0;
+  caret-color: #00a9e0;
+}
+
+.movistar .form-group .form-control:focus + span.icon i{
+  color: #00a9e0;
+}
+
+.movistar .form-control.help {
+  width: 87%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.movistar .helper-icon {
+  display: inline-block;
+}
+
+.movistar .form-control.invalid {
+  border:1px #ff374a solid;
+}
+
+.movistar .visibility-icon {
+  position: absolute;
+  font-size: 24px;
+  bottom: 8px;
+  right: 8px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Tooltip */
+.tooltip > .tooltip-inner {
+  background-color: #00a9e0!important;
+}
+.bs-tooltip-auto[x-placement^=top] .arrow::before, .bs-tooltip-top .arrow::before {
+  border-top-color: #00a9e0!important;
+}
+.bs-tooltip-auto[x-placement^=right] .arrow::before, .bs-tooltip-right .arrow::before {
+  border-right-color: #00a9e0!important;
+}
+.bs-tooltip-auto[x-placement^=left] .arrow::before, .bs-tooltip-left .arrow::before {
+  border-left-color: #00a9e0!important;
+}
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .bs-tooltip-bottom .arrow::before {
+  border-bottom-color: #00a9e0!important;
+}
+/* Tooltip */
+
+/* Checkbox Box */
+
+.movistar label.btn-checkbox {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+.movistar .btn-checkbox {
+  background-color: #fff;
+  border: 1px solid #999999 !important;
+  color: #999999 !important;
+}
+
+.movistar .btn-checkbox:hover {
+  background-color: #eeeeee;
+  color: #999999 !important;
+  color: var(--grey-6) !important;
+  border: 1px #00a9e0 solid;
+}
+
+.movistar .btn-checkbox:focus{
+  background-color: #00a9e0;
+  color: #fff !important;
+  color: var(--white) !important;
+  border: 1px #00a9e0 solid;
+  box-shadow: none !important;
+}
+
+.movistar .btn-checkbox:focus-within {
+  background-color: #fff;
+  border: 1px solid #999999 !important;
+  color: #999999 !important;
+}
+
+.movistar .btn-checkbox.active {
+  background-color: #00a9e0;
+  color: #fff !important;
+  color: var(--white) !important;
+  border: 1px #00a9e0 solid;
+  box-shadow: none !important;
+}
+.btn-group label {
+  min-height: 40px!important;
+  *background-color: #fff;
+  min-width: auto!important;
+}
+.btn-group>.btn-group:not(:first-child), .btn-group>.btn:not(:first-child) {
+  margin-left: -2px;
+}
+/* Checkbox Box */
+
+/* Radio Box */
+
+.movistar label.btn-radio {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+.movistar .btn-radio {
+  background-color: #fff;
+  border: 1px solid #999999 !important;
+  color: #999999 !important;
+}
+
+.movistar .btn-radio:hover {
+  background-color: #eeeeee;
+  color: #999999 !important;
+  color: var(--grey-6) !important;
+  border: 1px #00a9e0 solid;
+}
+
+.movistar .btn-radio:focus{
+  background-color: #00a9e0;
+  color: #fff !important;
+  color: var(--white) !important;
+  border: 1px #00a9e0 solid;
+  box-shadow: none !important;
+}
+
+.movistar .btn-radio:focus-within {
+  background-color: #fff;
+  border: 1px solid #999999 !important;
+  color: #999999 !important;
+}
+
+.movistar .btn-radio.active {
+  background-color: #00a9e0;
+  color: #fff !important;
+  color: var(--white) !important;
+  border: 1px #00a9e0 solid;
+  box-shadow: none !important;
+}
+.btn-group, .btn-group-vertical {
+  margin: 5px 0;
+}
+/* 
+.movistar .btn-radio{
+  overflow: hidden;
+  background-color: #00a9e0;
+  color: #fff;
+  color: var(--white);
+  border: 1px solid #999999!important;
+}
+
+.movistar .btn-radio:hover{
+  color: #fff;
+  color: var(--white);
+  background-color: #00a9e0;
+}
+.radio-group label:focus{
+  color: #fff;
+  color: var(--white);
+  background-color: #00a9e0;
+  border: 1px #00a9e0 solid;
+} */
+/* 
+.radio-group input {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  top: -20px;
+}
+/*
+.radio-group .not-active {
+  color: #999999;
+  color: var(--grey-6);
+  background-color: #fff;
+  border: 1px solid #999999;
+} */
+/* Radio Box */
+
+.movistar .form-control.check{
+  border: 1px #5bc500 solid!important;
+  background-color: #fff;
+}
+
+.movistar .form-control.disabled{
+
+  filter: opacity(50%);
+  cursor: not-allowed;
+}
+
+.movistar .label-form-date {
+    border-radius: 0.25rem 0.25rem 0 0;
+    border: 1px solid transparent;
+    border-color: transparent;
+}
+.movistar .date-form-group .form-control{
+    border-radius: 0 0 0.25rem 0.25rem ;
+}
+.movistar .form-group small.feedback-invalid{
+  display: none;
+}
+
+.movistar .form-group.invalid small.feedback-invalid{
+  display: block;
+}
+
+.movistar .form-group.invalid span.icon i{
+  color: #ec6839;
+}
+
+.movistar .form-control:disabled, .movistar .form-control[readonly] {
+  filter: opacity(50%);
+}
+
+.movistar .form-control:disabled + span.icon , .movistar .form-control[readonly] + span.icon {
+  filter: opacity(50%);
+}
+
+.movistar .custom-select.is-invalid, .movistar .form-control.is-invalid, .movistar .was-validated .custom-select:invalid, .movistar .was-validated .form-control:invalid{
+  border-color: #ec6839;
+  background-color: white;
+  color: #ec6839;
+}
+
+.custom-select.is-invalid + span.icon i , .form-control.is-invalid + span.icon i , .was-validated .custom-select:invalid + span.icon i , .was-validated .form-control:invalid + span.icon i {
+  color: #ec6839;
+}
+
+.movistar .was-validated .form-control:invalid:focus, .movistar .form-control.is-invalid:focus, .movistar .was-validated .custom-select:invalid:focus, .movistar .custom-select.is-invalid:focus {
+  border-color: #ec6839;
+  box-shadow: none;
+  color: #50535a;
+    color: var(--movistar-gunmetal);
+
+}
+
+.movistar .was-validated .form-control:invalid:focus + span.icon i, .movistar .form-control.is-invalid:focus + span.icon i, .movistar .was-validated .custom-select:invalid:focus + span.icon i, .movistar .custom-select.is-invalid:focus + span.icon i{
+  color: #ec6839;
+}
+
+.movistar .custom-radio .custom-control-input:checked~.custom-control-label::before {
+  background-color: #00a9e0;
+  border: 1px solid #00a9e0;
+
+}
+
+.movistar .custom-control-input:checked~.custom-control-label::before {
+  color: #fff;
+  background-color: #00a9e0;
+  border: 1px solid #00a9e0;
+
+}
+
+.movistar .custom-control-label::before {
+  background-color: transparent;
+  border: 1px solid #b6b7b7;
+}
+
+.movistar .custom-control.custom-checkbox .custom-control-label{
+  line-height: 1.7em;
+  font-style: normal;
+}
+
+.movistar .payment-header-check .custom-control-label::after {
+  position: absolute;
+  top: 2em;
+  left: 0.2em;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.movistar .payment-header-check .custom-control-label::before {
+  position: absolute;
+  border-radius: 0.15rem;
+  top: 2em;
+  left: 0.2em;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  pointer-events: none;
+  content: "";
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #dee2e6;
+}
+
+.movistar .custom-checkbox .custom-control-label::before {
+  border-radius: 50%;
+}
+
+.movistar .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+  background-color: #00a9e0;
+    color: var(--movistar-gunmetal);
+}
+
+@media (min-width: 768px) {
+  .movistar .payment-header-check .custom-control-label::after {
+    position: absolute;
+    top: 1.5em;
+    left: 1.5em;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+
+  .movistar .payment-header-check .custom-control-label::before {
+    position: absolute;
+    top: 1.5em;
+    left: 1.5em;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
+    content: "";
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #dee2e6;
+  }
+
+}
+
+/* FIN INPUTS */
+
+/*  External class*/
+
+.movistar .center-element{
+  margin: 0 auto !important;
+}
+.movistar .hundred-percent{
+  width: 100% !important;
+}
+
+.movistar .strong{
+  font-weight: 600;
+}
+
+.movistar .c-pointer{
+  cursor: pointer;
+}
+
+.movistar .word-break{
+  word-break: break-word;
+}
+
+.movistar .fit-content{
+  width: fit-content!important;
+}
+
+/* End External class */
+
+.movistar .accordion .card {
+  border: none;
+}
+
+.movistar .accordion .card-body {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125)
+}
+
+.movistar .accordion h5 {
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.movistar .accordion .card-header h5 i.icon::before {
+  content: "\e241";
+}
+
+.movistar .accordion .card-header h5.collapsed i.icon::before {
+  content: "\e238";
+}
+
+.movistar .modal.modal-bg-light {
+  background-color: rgba(244, 244, 243, 0.882);
+}
+
+@media (max-width: 767px) {
+  .d-none-mobile {
+    display: none!important;
+  }
+  .movistar label.label-title {
+    font-size: .8em;
+  }
+}
+
+@media (min-width: 768px) {
+  .d-none-desk {
+    display: none!important;
+  }
+}
+
+
+/* steps modal 3 steps */
+.movistar ul.step-by-step {
+  position: relative;
+  display: inline-flex;
+}
+
+.movistar ul.step-by-step li.step{
+  z-index: 1;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+
+.movistar ul.step-by-step li.step1,
+.movistar ul.step-by-step li.step2,
+.movistar ul.step-by-step li.step3{
+  color: #ffffff;
+  color: var(--white);
+}
+
+.movistar ul.step-by-step li.past-step{
+  color: #dddddd;
+  color: var(--grey-3);
+}
+
+.movistar ul.step-by-step li.current-step {
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  height: 1.5em;
+  background-color: #00a9e0;
+  border-radius: 25px;
+}
+
+.movistar ul.step-by-step li.current-step1 {
+  width: calc(100%/3);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.movistar ul.step-by-step li.current-step2 {
+  width: calc(2*100%/3);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.movistar ul.step-by-step li.current-step3 {
+  width: 100%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.movistar .content-step-modal,
+.movistar .modal-footer-step {
+  display: none;
+}
+/* END steps modal 3 steps */
+
+@media (max-width : 767px) {
+  .movistar .bg-push-l {
+      padding-left: 16px;
+      top: 0;
+  }
+}

@@ -1,0 +1,11 @@
+.form-design {
+    border: 1px solid #ddd;
+    padding:24px
+}
+
+@media (max-width: 767px) {
+    .form-design {
+        border: none;
+        padding:initial
+    }
+}

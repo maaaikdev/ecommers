@@ -1,0 +1,33 @@
+<section>
+  <div id="progress-bar" *ngIf="!viewItems">	
+    <img src="assets/images/Rolling-1s-200px.gif" alt="No debe tardar mucho" class="img-progress-bar">
+    <p>Agradecemos tu espera</p>
+  </div>
+</section>
+<section class="bg-gray">
+  <div class="container-fluid" >
+    <div class="row">
+      <div class="col-12 col-lg-2 mt-3 px-0 px-sm-3 px-lg-2">
+        <app-categories></app-categories>
+      </div>
+      <div class="col-12 col-lg-10">
+          <div class="container" *ngIf="viewItems">
+            <div class="row">
+              <div class="col-12">
+                <div class="input-group my-3">
+                  <input type="text" class="form-control" placeholder="Busca lo que necesitas" aria-label="Username" aria-describedby="basic-addon1" name="filterPost" [(ngModel)]="filterPost">
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-xl-4 my-3 px-0 px-sm-3" *ngFor="let listProduct of listProducts | filter: filterPost | paginate: { itemsPerPage: 24, currentPage: actualPage }; let i = index">
+                <app-items [data]="listProduct"></app-items>
+              </div>
+              <div class="col-12 text-center px-0 px-sm-2">
+                <div class="dropdown-divider mb-3"></div>
+                <pagination-controls (pageChange)="actualPage = $event"></pagination-controls>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>

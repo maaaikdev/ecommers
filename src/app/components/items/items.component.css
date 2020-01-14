@@ -1,0 +1,25 @@
+.filter {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    border-radius: 4px;
+}
+
+.btn {
+    border-radius: 2px!important;
+ }
+
+ .w-xl-45 {
+     width: 47%!important;
+ }
+h6.card-title {
+    color:#999999!important;
+}
+@media (max-width: 767px) {
+    .btn {
+       display: block;
+       width: 100%;
+    }
+    .w-45 {
+        width: 100%!important;
+    }
+}

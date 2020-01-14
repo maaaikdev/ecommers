@@ -1,0 +1,38 @@
+.categories {
+    width: 100%;
+    background-color: lightseagreen;
+}
+
+.categories h3{
+    color:#fff;
+    font-size:16px;
+    margin-bottom: 0!important;
+}
+
+/deep/ .card-header {
+    padding: .5rem .8rem;
+}
+
+ul.list-btn {
+    padding-left: 10px;
+}
+
+ul.list-btn li{
+    list-style: none;
+    padding: 10px 10px 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/deep/ .card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: .5rem 1.25rem;
+}
+
+/deep/ .card-header {
+    background-color: rgba(0,0,0,.25);
+}
+
+/deep/ .accordion-toggle button.btn {
+    color:#fff
+}
