@@ -23,6 +23,7 @@ import { NavComponent } from './components/nav/nav.component';
 import { CategoriesComponent } from './components/categories/categories.component';
 import { UsComponent } from './components/us/us.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { Error404Component } from './components/error404/error404.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ContactComponent } from './components/contact/contact.component';
     NavComponent,
     CategoriesComponent,
     UsComponent,
-    ContactComponent
+    ContactComponent,
+    Error404Component
   ],
   imports: [
     BrowserModule,

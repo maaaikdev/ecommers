@@ -18,7 +18,7 @@
                   <input type="text" class="form-control" placeholder="Busca lo que necesitas" aria-label="Username" aria-describedby="basic-addon1" name="filterPost" [(ngModel)]="filterPost">
                 </div>
               </div>
-              <div class="col-12 col-sm-6 col-xl-4 my-3 px-0 px-sm-3" *ngFor="let listProduct of listProducts | filter: filterPost | paginate: { itemsPerPage: 24, currentPage: actualPage }; let i = index">
+              <div class="col-12 col-sm-6 col-xl-4 my-3 px-0 px-sm-2" *ngFor="let listProduct of listProducts | filter: filterPost | paginate: { itemsPerPage: 24, currentPage: actualPage }; let i = index">
                 <app-items [data]="listProduct"></app-items>
               </div>
               <div class="col-12 text-center px-0 px-sm-2">

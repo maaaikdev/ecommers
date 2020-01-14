@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ItemsService } from 'src/app/services/items.service';
-import { SaleItemService } from 'src/app/services/sale-item.service';
 
 @Component({
   selector: 'app-shop',
@@ -28,15 +27,4 @@ export class ShopComponent implements OnInit {
       }
     );
   }
-
-  //Cambiar color de fondo aleatorio
-
-  // generarRandom():string {
-  //   return Math.floor( Math.random() * 255).toString(16);
-  // }
-
-  // colorHex():string {
-  //   return "#"+ this.generarRandom()+ this.generarRandom()+ this.generarRandom();
-  // }
-
 }
